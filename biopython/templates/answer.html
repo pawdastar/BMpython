@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Answer</title>
+    <style type="text/css">
+    *{ margin:0; padding:0; font-size:12px; font-family:"新宋体";}
+    ol{ background:url(/imagesforcode/201209/dots.jpg) no-repeat left -2px;}
+    li{position:relative; padding-left:20px;  height:20px; overflow:hidden; line-height:20px; width:250px; list-style:none;padding-right:60px;}
+    li a{ display:inline-block; text-decoration:none; color:#000;}
+    li a:hover{ text-decoration:underline;}
+    li span{ position:absolute; padding-left:5px;  color:#CCC;}
+    line {border-bottom: #0c0c0c}
+    </style>
 </head>
 <body>
 {% if data %}
 <ol>
     {% for a in data %}
-    <li>{{ a }}</li>
+    <li>
+        {{ a }}
+    </li>
+    <line/>
     {% endfor %}
     {% else %}
     <li>No Answer!!!!</li>
