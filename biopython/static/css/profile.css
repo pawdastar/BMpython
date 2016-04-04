@@ -1,0 +1,47 @@
+.backend {height:100%; width: 100%; font-family: Helvetica, Arial; overflow: hidden;}
+.backend .btn { border-color: #E84E40; background-color: #E84E40; margin: 0 5px; font-family: ClanOSF-News; font-size: 12px; padding: 10px 0; text-align: center; border-radius: 6px; line-height: 1; color: #fff; cursor: pointer;}
+.bac .btn:hover {opacity: 0.7; color: #000;}
+.backend .left {height: 100%; float:left; width: 23%; background-color: #313131; background-size: 100% auto; position: relative;}
+.backend .left .top {height: 30%;}
+.backend .left .top .uquick_logo {margin-top: 40px; height: 40%; background: url(../images/uquick_logo.png) 50% 50% no-repeat; background-size: 26% auto;}
+.backend .left .top .text1 {font-family: 'Corbel-Bold'; margin: 0 auto; font-size: 24px; font-weight: bold; color: #E84E40; text-align: center;}
+.backend .left .bot {height: 70%;}
+.backend .left .bot .menu_doc {height: 14%; border-top:1px solid #757575; padding: 1% 15%;}
+.backend .left .bot .menu_doc .logo {height:100%; float: left; width: 20%; background: url(../images/menu_doc.png) 50% 50% no-repeat; background-size: 80% auto;}
+.backend .left .bot .menu_doc .text {height:100%; float: right; width: 80%; top: 43%; position: relative; left: 4%; color: white; font-size: 20px; font-family: 'Book'}
+.backend .left .bot .menu_home {height: 14%; border-top:1px solid #757575; padding: 1% 15%;}
+.backend .left .bot .menu_home .logo {height:100%; float: left; width: 20%; background: url(../images/menu_home.png) 50% 50% no-repeat; background-size: 80% auto;}
+.backend .left .bot .menu_home .text {height:100%; float: right; width: 80%; top: 43%; position: relative; left: 4%; color: white; font-size: 20px; font-family: 'Book'}
+.backend .right {margin: 0px; height: 100%; float:right; width: 77%;  background-size: 100% auto; position: relative; background-color: #f2f2f4}
+.backend .right .content {height:10%;}
+.backend .right .content .banner {height:100%;background-color: #E84E40;}
+.backend .right .content .text1 {font-size: 20px; font-weight: bold; color: white; padding-left: 10%; padding-top: 3%; position: relative; bottom: 100%}
+.backend .right .profile{height: 100%;background-color: #f2f2f4; width: 100%; margin-top: 4%}
+.backend .right .profile .box{height: 80%; width: 90%; background-color: white; margin: auto auto;}
+.backend .right .profile .box .left_pro{height: 100%; width: 30%; float: left; }
+.backend .right .profile .box .right_pro{height: 100%; width: 70%; float: right;}
+.backend .right .profile .box .left_pro .top{height: 60% ;border-right:1px solid #f2f2f4;}
+.backend .right .profile .box .left_pro .top .text1{font-size: 25px; font-weight: bold; color: #E84E40; text-align: center; margin-top: 15%;}
+.backend .right .profile .box .left_pro .top .text2{font-size: 17px; color: #E84E40; text-align: center; font-family: 'Book'; padding-top:2%; padding-bottom: 5%}
+.backend .right .profile .box .left_pro .top .photo{height: 20%;padding-bottom: 10%;width: auto;margin-left: 35%}
+.backend .right .profile .box .left_pro .top .text3{font-size: 13px; text-align: center; font-family: 'Medium'; padding-top:1%; padding-bottom: 1%}
+.backend .right .profile .box .left_pro .top .btn-group {margin: 5% auto;}
+.backend .right .profile .box .left_pro .top .btn {display: inline-block; width: 90px; margin-left: 35%; margin-bottom: 3%}
+.backend .right .profile .box .left_pro .bot{border-right:1px solid #f2f2f4; height: 40%;}
+.backend .right .profile .box .left_pro .bot .left_pro_bot{width: 50%; float: left; height: 70%}
+.backend .right .profile .box .left_pro .bot .left_pro_bot .icon{height: 50%; background: url(../images/driving.png) 50% 50% no-repeat; background-size: 50% auto; padding-bottom: 10%}
+.backend .right .profile .box .left_pro .bot .left_pro_bot .text{font-size: 13px; text-align: center; font-family: 'Medium'; padding-top:2%; padding-bottom: 2%}
+.backend .right .profile .box .left_pro .bot .left_pro_bot .btn-group {margin: 5% auto;}
+.backend .right .profile .box .left_pro .bot .left_pro_bot .btn {display: inline-block; width: 90px; margin-left: 20%; margin-bottom: 3%}
+.backend .right .profile .box .left_pro .bot .right_pro_bot{width: 50%; float: right; height: 70%}
+.backend .right .profile .box .left_pro .bot .right_pro_bot .icon{height: 50%; background: url(../images/driving.png) 50% 50% no-repeat; background-size: 50% auto; padding-bottom: 10%}
+.backend .right .profile .box .left_pro .bot .right_pro_bot .text{font-size: 13px; text-align: center; font-family: 'Medium'; padding-top:2%; padding-bottom: 2%}
+.backend .right .profile .box .left_pro .bot .right_pro_bot .btn-group {margin: 5% auto;}
+.backend .right .profile .box .left_pro .bot .right_pro_bot .btn {display: inline-block; width: 90px; margin-left: 20%; margin-bottom: 3%}
+
+.backend .right .profile .box .right{width: 60%;height: 100%;}
+.backend .right .form {height: 100%;width: 100%; margin: 4% auto; padding: 20px 6%; }
+.backend .right .form .form-control {background-color: #f2f2f4; width: 82%; padding: 2% 3%; font-size: 12px; margin-top: 1%; border: 0px}
+.backend .right .form .form-control.sm {float: left; width: 37.75%; display: block;}
+.backend .right .form .form-control.rm {float: left; width: 37.3%; display: block; margin-left: 1%}
+.backend .right .form .submit {border: 0px;width: 88%; font-size: 14px; margin-top: 3%; padding: 1%; background-color: #E84E40; color: white}

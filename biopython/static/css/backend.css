@@ -1,0 +1,29 @@
+.backend {height:100%; width: 100%; font-family: Helvetica, Arial; overflow: hidden;}
+.backend .left {height: 100%; float:left; width: 23%; background-color: #313131; background-size: 100% auto; position: relative;}
+.backend .left .top {height: 30%;}
+.backend .left .top .uquick_logo {margin-top: 40px; height: 40%; background: url(../images/uquick_logo.png) 50% 50% no-repeat; background-size: 26% auto;}
+.backend .left .top .text1 {font-family: 'Corbel-Bold'; margin: 0 auto; font-size: 24px; font-weight: bold; color: #E84E40; text-align: center;}
+.backend .left .bot {height: 70%;}
+.backend .left .bot .menu_doc {height: 14%; border-top:1px solid #757575; padding: 1% 15%;}
+.backend .left .bot .menu_doc .logo {height:100%; float: left; width: 20%; background: url(../images/menu_doc.png) 50% 50% no-repeat; background-size: 80% auto;}
+.backend .left .bot .menu_doc .text {height:100%; float: right; width: 80%; top: 43%; position: relative; left: 4%; color: white; font-size: 20px; font-family: 'Book'}
+.backend .left .bot .menu_home {height: 14%; border-top:1px solid #757575; padding: 1% 15%;}
+.backend .left .bot .menu_home .logo {height:100%; float: left; width: 20%; background: url(../images/menu_home.png) 50% 50% no-repeat; background-size: 80% auto;}
+.backend .left .bot .menu_home .text {height:100%; float: right; width: 80%; top: 43%; position: relative; left: 4%; color: white; font-size: 20px; font-family: 'Book'}
+.backend .right {margin: 0px; height: 100%; float:right; width: 77%;  background-size: 100% auto; position: relative;}
+.backend .right .content {height:76%; background: url(../images/content.png) 50% 50% no-repeat; background-size: 100% auto;}
+.backend .right .content .banner {height:10%;background-color: #E84E40;filter:alpha(opacity=60);  -moz-opacity:0.6;  -khtml-opacity: 0.6;  opacity: 0.6; }
+.backend .right .content .text1 {font-size: 20px; font-weight: bold; color: white; padding-left: 10%; padding-top: 2%; position: relative; bottom: 10%}
+.backend .right .content .text2 {font-size: 35px; font-weight: bold; color: white; padding-left: 10%; padding-top: 2%; position: relative; top: 10%; font-family: 'News';}
+.backend .right .bottom {height:24%;}
+.backend .right .bottom .bot1 {height:100%; width: 33%; float: left;}
+.backend .right .bottom .bot1 .icon{height:100%; background: url(../images/time.png) 50% 20% no-repeat; background-size: 17% auto;}
+.backend .right .bottom .bot1 .text{bottom: 40%;font-family:'Book'; font-size: 15px; position: relative; text-align: center; padding-bottom: 3px}
+.backend .right .bottom .bot2 {height:100%; width: 34%; float: left;}
+.backend .right .bottom .bot2 .icon{height:100%; background: url(../images/chat.png) 50% 20% no-repeat; background-size: 19% auto;}
+.backend .right .bottom .bot2 .text{bottom: 40%;font-family:'Book'; font-size: 15px; position: relative; text-align: center; padding-bottom: 3px}
+.backend .right .bottom .bot3 {height:100%; width: 33%; float: right;}
+.backend .right .bottom .bot3 .icon{height:100%; background: url(../images/rate.png) 50% 20% no-repeat; background-size: 25% auto;}
+.backend .right .bottom .bot3 .text{bottom: 40%;font-family:'Book'; font-size: 15px; position: relative; text-align: center; padding-bottom: 3px}
+
+/*.backend .right .banner {padding-bottom: 20%; text-decoration: none;}*/

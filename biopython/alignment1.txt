@@ -1,0 +1,5 @@
+ReadName: r1	Position: 1084	Alignment: TCCTAC	Strand: +	Number of Alignments: 	2
+ReadName: r2	Position: 149	Alignment: TAGCGC	Strand: +	Number of Alignments: 	2
+ReadName: r3	Position: 20	Alignment: AACGGG	Strand: +	Number of Alignments: 	1
+ReadName: r4	PositionL 34	Alignment: ACAGAG	Strand: -	Number of Alignments: 	2
+ReadName: r5	Position: 82	Alignment: TTACC	Strand: +	Number of Alignments: 	11

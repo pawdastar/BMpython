@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title>Become a courier</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/business.css">
+</head>
+<body>
+	<div class="business">
+		<div class="b">
+			<div class="btn-group">
+				<a class="btn" href="index.html">HOME</a>
+				<a class="btn" href="business.html">BUSINESS</a>
+			</div>
+			<h2 class="title">Access your account, to update your personal details !</h2>
+		</div>
+		<div class="d">
+            {% if data.info %}
+			<h2 class="title" style="color: #E84E40">{{ data.info }}</h2>
+            {% else %}
+            <h2 class="title">Login with UQUICK Account !</h2>
+            {% endif %}
+			<form class="form" method='post' action='login'>
+				<input name='userid' type="text" class="form-control sm" placeholder="Phone_Number" />
+				<input name='password' type="password" class="form-control sm" placeholder="Password" />
+				<input type="submit" class="submit" value="SUBMIT"/>
+            </form>
+
+		</div>
+		<div class="g">
+			<div class="logo appStore"></div>
+			<div class="logo googlePlay"></div>
+			<div class="menu">
+				<a href="com_courier" class="text">BECOME A COURIER</a>
+				<a href="/static/faququick.pdf" class="text">FAQs</a>
+				<a href="#" class="text">CONTACT US</a>
+				<a href="/static/UQUICKTermsandConditions.pdf" class="text">TERMS</a>
+				<a href="com_privacy" class="text">PRIVACY</a>
+				<div class="toggle"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/uquick.js"></script>
+</body>
+</html>

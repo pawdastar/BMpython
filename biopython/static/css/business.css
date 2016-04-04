@@ -1,0 +1,57 @@
+.business {width: 100%; font-family: Helvetica, Arial; overflow: hidden;}
+.business h2, .business p, .business ul, .business h4 {margin: 0; padding: 0;}
+.business h2 {font-family: 'ClanOSF-Thin'; font-size: 30px; margin: 0 auto; line-height: 1.4; font-weight: normal; color: #000;}
+.business a {text-decoration: none;}
+.business p {font-family: 'ClanOSF-Book'; font-size:16px; line-height: 1.6; color: #000;}
+.business .btn {border-color: #1fbad6; background-color: #1fbad6; font-family: 'ClanOSF-News'; font-size: 14px; color: #fff; line-height: 1;}
+.business .btn:hover {opacity: 0.7; color: #000;}
+
+.business .a {background: url(../images/business_a.jpg) 50% 0 no-repeat; padding-top: 56%; background-size: 100% auto; position: relative;}
+
+.business .b {background-color: #fff; padding: 10px 0; text-align: center;}
+.business .b .btn-group {text-align: right; padding: 10px 10px;}
+.business .b .btn-group .btn {padding: 10px 30px; margin: 0 3px;}
+.business .b .title {color: #000; padding: 40px 100px;}
+
+.business .d {width: 100%; background-color: #fafafa; text-align: center; padding-bottom: 20px;}
+.business .d .title {color: #000; padding: 30px 0; font-size: 46px;}
+.business .d p {}
+.business .d .form {width: 500px; margin: 0 auto; padding: 20px 0;}
+.business .d .form .form-control {width: 476px; padding: 6px 10px; font-size: 14px; line-height: 2; color: #000; border: 1px solid #c6c6c6; border-radius: 4px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); font-family: 'ClanOSF-Book'; margin-bottom: 15px;}
+.business .d .form .form-control.sm {width: 225px; display: inline-block;}
+.business .d .form .submit {width: 498px; padding: 6px 0; font-size: 16px; line-height: 2; color: #fff; background-color: #1fbad6; border-radius: 4px; border: 1px solid #1fbad6; font-family: 'ClanOSF-Medium'; cursor: pointer;}
+.business .d .form .submit:hover {color: #000; opacity: 0.7;}
+
+.business .g {height: auto; background-color: #09091a; width: 99%; padding: 20px 1%; display: table;}
+.business .g .logo.appStore {width: 10%; background: url(../images/appStore.png) 50% 50% no-repeat; background-size: 100% auto; padding-bottom: 4.5%; display: table-cell; vertical-align: middle;}
+.business .g .logo.googlePlay {width: 10%; background: url(../images/googlePlay.png) 50% 50% no-repeat; background-size: 100% auto; padding-bottom: 4.5%; display: table-cell; vertical-align: middle;}
+.business .g .menu {width: 75%; text-align: right; display: table-cell; vertical-align: middle;}
+.business .g .menu .text {padding: 0 15px; font-family: 'ClanOSF-Medium'; font-size: 18px; color: #fff; line-height: 1; display: inline-block; cursor: pointer;}
+.business .g .menu .text:hover {color: #1fbad6;}
+
+@media screen and (max-width: 830px) {
+	.business .g {width: 100%; padding: 5% 0; display: block; text-align: left; position: relative;}
+	.business .g .logo.appStore, .business .g .logo.googlePlay {width: 30%; padding-bottom: 13.5%; display: inline-block; margin: 0 auto;}
+	.business .g .menu {width: 33%; text-align: center; display: inline-block; margin: 0 auto; position: relative; padding-top: 10%;}
+	.business .g .menu .toggle { position: absolute; right: 0; top: 0; background: url(../images/menu.png) 50% 50%; background-size: 100% auto; padding-top: 30%; width: 30%; display: block;}
+	.business .g .menu .text {padding: 5px 10px; font-size: 12px; display: none;}
+
+}
+
+@media screen and (max-width: 736px) {
+	.business br {display: none;}
+	.business .a {background: url(../images/business_a_mobile.jpg) 50% 0 no-repeat; padding-top: 125%; background-size: 100% auto;}
+	.business .b {text-align: left;}
+	.business .b .title {color: #000; padding: 40px 6%; font-size: 20px;}
+
+	.business .d {text-align: left;}
+	.business .d .title {color: #000; padding: 30px 6%; font-size: 30px;}
+	.business .d p {padding: 0 6%;}
+	.business .d .form {width: 100%; margin: 0 auto; padding: 20px 6%;}
+	.business .d .form .form-control {width: 82%; padding: 6px 3%; font-size: 12px;}
+	.business .d .form .form-control.sm {width: 82%; display: block;}
+	.business .d .form .submit {width: 88%; font-size: 14px;}
+
+}
+
+

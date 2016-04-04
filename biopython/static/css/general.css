@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'ClanOSF-News';
+  src:url('../fonts/ClanOSF-News.otf') format('truetype');
+}
+@font-face {
+  font-family: 'ClanOSF-Bold';
+  src: url('../fonts/ClanOSF-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'ClanOSF-Medium';
+  src:url('../fonts/ClanOSF-Medium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'ClanOSF-Book';
+  src:url('../fonts/ClanOSF-Book.otf') format('truetype');
+}
+@font-face {
+  font-family: 'ClanOSF-Thin';
+  src:url('../fonts/ClanOSF-Thin.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Corbel-Bold';
+  src:url('../fonts/ufonts.com_corbel-bold.ttf') format('truetype');
+}
+
+body {margin: 0; padding: 0; zoom: 1;}
+.show {
+  animation-name: appear;
+  -webkit-animation-name: appear;
+  -ms-animation-name: appear;
+  -moz-animation-name: appear;
+  -o-animationname: appear;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+}
+@keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-ms-keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

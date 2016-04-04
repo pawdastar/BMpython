@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer</title>
+</head>
+<body>
+{% if data %}
+<ol>
+    {% for a in data %}
+    <li>{{ a }}</li>
+    {% endfor %}
+    {% else %}
+    <li>No Answer!!!!</li>
+{% endif %}
+</ol>
+</body>
+</html>

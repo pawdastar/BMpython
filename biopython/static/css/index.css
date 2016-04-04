@@ -1,0 +1,110 @@
+.uquick {width: 100%; font-family: Helvetica, Arial; overflow: hidden;}
+.uquick p, .uquick h2, .uquick span, .uquick ul, .uquick a {margin: 0; padding: 0;}
+.uquick .btn { border-color: #1fbad6; background-color: #1fbad6; margin: 0 5px; font-family: ClanOSF-News; font-size: 12px; padding: 15px 0; text-align: center; border-radius: 6px; line-height: 1; color: #fff; cursor: pointer;}
+.uquick .btn:hover {opacity: 0.7; color: #000;}
+.uquick a {text-decoration: none;}
+
+.uquick .a {position: relative;}
+.uquick .a .bg {background: url(../images/a.jpg) 50% 0 no-repeat; background-size: 100% auto; height: auto; padding-top: 56%;}
+.uquick .a .info {position: absolute; text-align: center; padding-top: 8%; top: 0; left: 0; width: 100%;}
+.uquick .a .info .logo {width: 8%; height: auto; padding-top: 8%; background: url(../images/a_logo.png) 50% 0 no-repeat; background-size: 100% auto; margin: 0 auto;}
+.uquick .a .info .text1 {font-family: 'Corbel-Bold'; font-size: 24px; margin: 0 auto; font-weight: bold; color: #fff;}
+.uquick .a .info .text2 {font-family: 'ClanOSF-Medium'; font-size: 30px; padding-top: 5%; color: #fff; font-weight: bold; margin: 0 auto;}
+.uquick .a .info .text3 {font-family: 'ClanOSF-News'; font-size: 20px; margin: 0 auto; color: #1fbad6;}
+.uquick .a .info .btn-group {margin: 5% auto;}
+.uquick .a .info .btn {display: inline-block; width: 90px;}
+
+.uquick .b {height: auto; background-color: #f2f2f4; position: relative; display: table;}
+.uquick .b .info {padding-left: 3%;}
+.uquick .b .info .text {width: 50%; vertical-align: middle; display: table-cell; padding: 3% 0;}
+.uquick .b .info .text h2 {font-family: 'ClanOSF-Thin'; font-size: 46px; line-height: 1.4; color: #000; font-weight: normal;}
+.uquick .b .info .text p {font-family: 'ClanOSF-Book'; font-size: 16px; line-height: 1.6; color: #000; margin-top: 3%;}
+.uquick .b .info .logo {width: 48%; margin: auto 0; background: url(../images/b.png) 50% 50% no-repeat; background-size: 100% auto; padding-bottom: 44%; display: table-cell; vertical-align: middle;}
+
+.uquick .c {height: auto; position: relative; padding: 0; display: table; width: 100%; background-color: #fff;}
+.uquick .c .left {display: table-cell; vertical-align: middle; height: auto; width: 50%; padding-bottom: 46%;}
+.uquick .c .left.bike {background: url(../images/c_bike.jpg) 50% 50% no-repeat; background-size: 100% auto;}
+.uquick .c .left.car {background: url(../images/c_car.jpg) 50% 50% no-repeat; background-size: 100% auto;}
+.uquick .c .right {display: table-cell; vertical-align: middle; height: auto; width: 48%; padding: 3% 3%;}
+.uquick .c .right .title {font-family: 'ClanOSF-Thin'; font-size: 46px; color: #000; line-height: 1.4; font-weight: normal;}
+.uquick .c .right .text {font-family: 'ClanOSF-Book'; font-size: 16px; color: #000; line-height: 1.6;}
+.uquick .c .right .buttons, .uquick .c .right .info {padding: 3% 0;}
+.uquick .c .right .buttons .bike, .uquick .c .right .buttons .car {display: inline-block; font-family: 'ClanOSF-News'; font-size: 16px; color: #9d9da3; line-height: 2; cursor: pointer;}
+.uquick .c .right .buttons .bike {margin-left: 5%;}
+.uquick .c .right .buttons .bike span:hover, .uquick .c .right .buttons .car span:hover {color: #1fbad6;}
+.uquick .c .right .info .bike, .uquick .c .right .info .car {font-family: 'ClanOSF-Book'; font-size: 16px; color: #000; line-height: 1.6; margin-left: 15px; display: none; min-height: 100px;}
+.uquick .c .right .buttons .active {display: inline-block; color: #000; border-bottom: 2px solid #1fbad6;}
+.uquick .c .right .info .active {display: block;}
+.uquick .c .right .btn-group {padding-top: 5%;}
+.uquick .c .right .btn {padding: 15px 15px;}
+
+.uquick .d {height: auto; background-color: #f2f2f4; position: relative; display: table;}
+.uquick .d .info {padding-right: 13%;}
+.uquick .d .info .text {width: 50%; vertical-align: middle; display: table-cell; padding: 3% 0;}
+.uquick .d .info .text h2 {font-family: 'ClanOSF-Thin'; font-size: 46px; line-height: 1.4; color: #000; font-weight: normal;}
+.uquick .d .info .text p {font-family: 'ClanOSF-Book'; font-size: 16px; line-height: 1.6; color: #000; margin-top: 3%;}
+.uquick .d .info .logo {width: 48%; margin: auto 0; background: url(../images/d.png) 50% 50% no-repeat; background-size: 100% auto; padding-bottom: 44%; display: table-cell; vertical-align: middle;}
+
+.uquick .e {height: auto; background: #fafafa url(../images/e.jpg) 50% 0 no-repeat; background-size: 100% auto; padding-top: 40%; margin: 0 auto; text-align: center; padding-bottom: 15px;}
+.uquick .e p {font-family: 'ClanOSF-Thin'; font-size: 25px; line-height: 1.5;}
+
+.uquick .f {height: auto; background-color: #fff; padding-top: 30px; padding-bottom: 15px; text-align: center; margin: 0 auto;}
+.uquick .f p {font-family: 'ClanOSF-Thin'; font-size:30px; line-height: 1.5;}
+.uquick .f .btn-group {padding: 30px 0;}
+.uquick .f .btn {border-radius: 2px; padding: 15px 15px; font-size: 18px; font-family: 'ClanOSF-Medium';}
+
+.uquick .g {height: auto; background-color: #09091a; width: 99%; padding: 20px 1%; display: table;}
+.uquick .g .logo.appStore {width: 10%; background: url(../images/appStore.png) 50% 50% no-repeat; background-size: 100% auto; padding-bottom: 4.5%; display: table-cell; vertical-align: middle;}
+.uquick .g .logo.googlePlay {width: 10%; background: url(../images/googlePlay.png) 50% 50% no-repeat; background-size: 100% auto; padding-bottom: 4.5%; display: table-cell; vertical-align: middle;}
+.uquick .g .menu {width: 85%; text-align: right; display: table-cell; vertical-align: middle;}
+.uquick .g .menu .text {padding: 0 15px; font-family: 'ClanOSF-Medium'; font-size: 18px; color: #fff; line-height: 1; display: inline-block; cursor: pointer;}
+.uquick .g .menu .text:hover {color: #1fbad6;}
+.uquick .g .menu .toggle {display: none;}
+
+@media screen and (max-width: 830px) {
+  .uquick .g {width: 100%; padding: 5% 0; display: block; text-align: left; position: relative;}
+  .uquick .g .logo.appStore, .uquick .g .logo.googlePlay {width: 30%; padding-bottom: 13.5%; display: inline-block; margin: 0 auto;}
+  .uquick .g .menu {width: 33%; text-align: center; display: inline-block; margin: 0 auto; position: relative; padding-top: 10%;}
+  .uquick .g .menu .toggle { position: absolute; right: 0; top: 0; background: url(../images/menu.png) 50% 50%; background-size: 100% auto; padding-top: 30%; width: 30%; display: block;}
+  .uquick .g .menu .text {padding: 5px 10px; font-size: 12px; display: none;}
+
+}
+
+@media screen and (max-width: 736px) {
+  .uquick .a {background-color: #000; padding-bottom: 10%;}
+  .uquick .a .bg {display: none;}
+  .uquick .a .info {position: relative; padding-top: 30%;}
+  .uquick .a .info .logo {width: 20%; padding-top: 20%;}
+  .uquick .a .info .text1 {font-size: 24px; margin: 0 auto; font-weight: normal; color: #fff;}
+  .uquick .a .info .text2 {font-size: 26px; margin-top: 10%; width: 88%;}
+  .uquick .a .info .text3 {font-size: 18px; width: 88%;}
+  .uquick .a .info .btn-group {margin: 10% auto;}
+
+  .uquick .b {display: block; text-align: center;}
+  .uquick .b .info {padding-left: 0; width: 88%; margin: 0 auto; text-align: left;}
+  .uquick .b .info .text {width: 100%; display: block; padding: 3% 0; padding-top: 10%;}
+  .uquick .b .info .text h2 {font-size: 32px;}
+  .uquick .b .info .text p {font-size: 16px;}
+  .uquick .b .info .logo {width: 100%; padding-bottom: 90%; display: block;}
+
+  .uquick .c {display: block; padding: 10% 0;}
+  .uquick .c .left {display: none;}
+  .uquick .c .right {display: block; width: 88%; padding: 3% 0; text-align: left; margin: 0 auto;}
+  .uquick .c .right .title {font-size: 32px;}
+  .uquick .c .right .info .bike {background: url(../images/c_bike.jpg) 50% 100% no-repeat; background-size: 100% auto; padding-bottom: 92%; min-height: 0;}
+  .uquick .c .right .info .car {background: url(../images/c_car.jpg) 50% 100% no-repeat; background-size: 100% auto; padding-bottom: 75%; min-height: 0;}
+
+  .uquick .d {display: block; padding: 10% 0;}
+  .uquick .d .info {padding-right: 0; width: 88%; margin: 0 auto;}
+  .uquick .d .info .text {width: 100%;display: block; padding: 3% 0;}
+  .uquick .d .info .text h2 {font-size: 32px;}
+  .uquick .d .info .logo {width: 100%; padding-bottom: 88%; display: block;}
+
+  .uquick .e {text-align: left;}
+  .uquick .e p {font-size: 20px; width: 88%; margin: 0 auto;}
+
+  .uquick .f {width: 88%; text-align: left;}
+  .uquick .f p {font-size:20px;}
+  .uquick .f .btn-group {width: 100%; text-align: center; margin: 0 auto;}
+
+}

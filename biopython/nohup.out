@@ -1,0 +1,36 @@
+Unknown command: 'runsever'
+Type 'manage.py help' for usage.
+Unknown command: 'runsever'
+Type 'manage.py help' for usage.
+/Library/Python/2.7/site-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+/Users/tataufo/PycharmProjects/uquick/company/urls.py:14: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url('^com_privacy', views.com_privacy),
+
+/Users/tataufo/PycharmProjects/uquick/uquick/urls.py:22: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url(r'^company/', include('company.urls'))
+
+/Library/Python/2.7/site-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+/Users/tataufo/PycharmProjects/uquick/company/urls.py:14: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url('^com_privacy', views.com_privacy),
+
+/Users/tataufo/PycharmProjects/uquick/uquick/urls.py:22: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url(r'^company/', include('company.urls'))
+
+Error: That port is already in use.
+[03/Feb/2016 06:01:37] "GET /company/com_privacy HTTP/1.1" 200 755
+[03/Feb/2016 06:01:41] "GET /company/com_index HTTP/1.1" 200 3253
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+February 03, 2016 - 06:01:10
+Django version 1.9, using settings 'uquick.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+CommandError: You must set settings.ALLOWED_HOSTS if DEBUG is False.

@@ -1,0 +1,419 @@
+message Organization{
+  int32 city = 1;
+  string org_name = 2;
+  int32 start_date = 3;
+  int32 end_date = 4;
+  int32 count = 5;
+  repeated User user_list = 6;
+  bool need_msg = 7;
+  int32 org_id = 8;
+}
+
+message User{
+  string user_name = 1;
+  string avatar_url = 2;
+  string telephone = 3;
+  int32 user_id = 4;
+}
+
+message Group{
+  int32 group_id =1;
+  string group_name = 2;
+  repeated User user_list = 3;
+  bool need_msg = 4;
+  int32 org_id = 5;
+}
+
+//1.	获得验证码  get_verify_id()
+message Request40001 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+		int32 telephone = 1;
+	}
+}
+
+message Response40001 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 2.	将输入的验证码发送给服务器 verify_tel_num()
+message Request40002 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+		int32 telephone = 1;
+    int32 verify_id = 2;
+	}
+}
+
+message Response40002 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 3.	补全资料： init_user_info()
+message Request40003 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+		string user_name = 1;
+    string avatar_url = 2;
+    repeated Organization org_list = 3;
+	}
+}
+
+message Response40003 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 4. 获取用户详情 get_user_info()
+message Request40004 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+  message Params {
+  }
+}
+
+message Response40004 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+    string user_name = 1;
+    string avatar_url = 2;
+    repeated Organization org_list = 3;
+	}
+}
+
+// // 5. get_org_by_city()（待讨论）根据城市获取列表
+// message Request40001 {
+// 	com.tataufo.proto.Request common = 1;
+// 	Params params = 2;
+// 	message Params {
+// 		int32 city = 1;
+// 	}
+// }
+//
+// message Response40001 {
+// 	com.tataufo.proto.Response common = 1;
+// 	Data data = 2;
+// 	message Data {
+// 		repeated Organization org_list = 1;
+// 	}
+// }
+
+// 6.	get_org_by_name() 获取组织列表
+message Request40005 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 city = 1;
+    string keyword = 2;
+	}
+}
+
+message Response40005 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+		repeated Organization org_list = 1;
+	}
+}
+
+// 7.	添加新的org insert_new_org()
+message Request40006 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    Organization org = 1;
+	}
+}
+
+message Response40006 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// // 8.	add_user_org（新增org的省份问题）
+// message Request40001 {
+// 	com.tataufo.proto.Request common = 1;
+// 	Params params = 2;
+// 	message Params {
+//     string org_name = 1;
+//     int32 start_date = 2;
+//     int32 end_date = 3;
+// 	}
+// }
+//
+// message Response40001 {
+// 	com.tataufo.proto.Response common = 1;
+// 	Data data = 2;
+// 	message Data {
+// 	}
+// }
+
+// 9. 发短信邀请进org invite_to_org()
+message Request40007 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    Organization org_invite = 1;
+	}
+}
+
+message Response40007 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 10. 修改组织 move_user_to_org()
+message Request40008 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 old_org_id = 1;
+    Organization new_org = 2;
+	}
+}
+
+message Response40008 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 11. 获取同org下的userlist get_user_list() **时间交集
+message Request40009 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 org_id = 1;
+    string org_name = 2;
+	}
+}
+
+message Response40009 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+    repeated User user =1;
+	}
+}
+
+// 12. 获取group通过org get_group_by_org() ** 时间交集
+message Request40010 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 org_id = 1;
+    string org_name = 2;
+	}
+}
+
+message Response40010 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+    repeated Group group_list = 1;
+	}
+}
+
+// 13. 创建group create_group()
+message Request40011 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    Group new_group = 1;
+
+	}
+}
+
+message Response40011 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+
+// 14. 短信拉人 invite_to_group()
+message Request40012 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 group_id = 1;
+    repeated User user_list = 2;
+	}
+}
+
+message Response40012 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 15. 退出 group group_exit()
+message Request40013 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 group_id = 1;
+    string group_name = 2;
+	}
+}
+
+message Response40013 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 16. 举报 report_user()
+message Request40014 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 user_id = 1;
+	}
+}
+
+message Response40014 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 17. 搜索 search_by_name()
+message Request40015 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    string target_name = 1;
+	}
+}
+
+message Response40015 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+    repeated User user_list = 1;
+    repeated Group group_list = 2;
+	}
+}
+
+// 18. 修改姓名头像 edit_user_info()
+message Request40016 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    User new_info = 1;
+    }
+}
+
+message Response40016 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// // 19. 修改姓名头像 search_by_name()
+// message Request40001 {
+// 	com.tataufo.proto.Request common = 1;
+// 	Params params = 2;
+// 	message Params {
+//     string user_name = 1;
+//     string avatar_url = 2;
+// 	}
+// }
+//
+// message Response40001 {
+// 	com.tataufo.proto.Response common = 1;
+// 	Data data = 2;
+// 	message Data {
+// 	}
+// }
+
+// 20. 修改group_名称 change_group()
+message Request40017 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 group_id = 1;
+    string new_group_name = 2;
+	}
+}
+
+message Response40017 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 21. 申请加入 apply_for_group()
+message Request40018 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 group_id = 1;
+	}
+}
+
+message Response40018 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 22. 允许加入 permit_group_application()
+message Request40019 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    int32 applicant_id = 1;
+    string applicant_name = 2;
+    string admin_name = 3;
+	}
+}
+
+message Response40019 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}
+
+// 23. 更新经纬度 update_site()
+message Request40020 {
+	com.tataufo.proto.Request common = 1;
+	Params params = 2;
+	message Params {
+    string longtitude = 1;
+    string latitude = 2;
+	}
+}
+
+message Response40020 {
+	com.tataufo.proto.Response common = 1;
+	Data data = 2;
+	message Data {
+	}
+}

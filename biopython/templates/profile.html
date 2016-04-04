@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<title>Driver's backend</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/profile.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script>
+        setTimeout(function(){
+            document.getElementsByTagName('body')[0].style.height = window.innerHeight+'px';
+        },20);
+	</script>
+</head>
+
+<body style="" onresize="document.getElementsByTagName('body')[0].style.height = window.innerHeight+'px';">
+	<div class="backend">
+		<div class="left">
+			<div class="top">
+				<div class="uquick_logo"></div>
+				<div class="text1">UQUICK</div>
+			</div>
+			<div class="bot">
+                <a href="com_backend">
+				<div class="menu_home">
+					<div class="logo"></div>
+					<div class="text">DASHBOARD</div>
+				</div>
+                </a>
+                <a href="com_profile">
+				<div class="menu_doc">
+					<div class="logo"></div>
+					<div class="text">PROFILE</div>
+				</div>
+                </a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="content">
+				<div class="banner"></div>
+				<div class="text1">YOUR PRIVATE COURIER</div>
+			</div>
+			<div class="profile">
+				<div class="box">
+					<div class="left_pro">
+						<div class="top">
+							<div class="text1">Your Profile</div>
+							<div class="text2">Update your details</div>
+							<div class="text3">Profile Photo</div>
+							<img class="photo" src="{{ data.avatar_url }}"></img>
+							<div class="text3">Choose a picture that clearly</div>
+							<div class="text3">identifies your face</div>
+							<div class="btn-group">
+                                <form enctype="multipart/form-data" method="POST" action="/update_avatar">
+                                    <input type="file" name="picfile" style="margin-left: 20%; margin-bottom: 3%"/>
+                                    <br />
+                                    <input class="btn" type="submit" value="Upload" />
+                                </form>
+							</div>
+							<div class="text3">Photo Identity</div>
+						</div>
+						<div class="bot">
+							<div class="left_pro_bot">
+								<div class="icon"></div>
+								<div class="text">Driving licence</div>
+								<div class="btn-group">
+								<a href="#" class="btn">Upload file</a>
+								</div>
+							</div>
+							<div class="right_pro_bot">
+								<div class="icon"></div>
+								<div class="text">Passport</div>
+								<div class="btn-group">
+								<a href="#" class="btn">Upload file</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right_pro">
+						<form class="form" method='post' action="com_profile">
+						<input name="first_name" type="text" class="form-control" placeholder="First Name" value="{{ data.fname }}" />
+						<input name="last_name" type="text" class="form-control"  placeholder="Last Name" value="{{ data.lname }}" />
+						<input name="email" type="text" class="form-control" placeholder="Email" value="{{ data.email }}" />
+						<input name="phone_number" type="text" class="form-control" placeholder="Phone Number" value="{{ data.phone }}" />
+						<input name="home_address" type="text" class="form-control" placeholder="HOME address" />
+						<input name="abn" type="text" class="form-control" placeholder="ABN or ACN" />
+						<input name="vehicle" type="text" class="form-control" placeholder="Vehicle" />
+						<input name="hours" type="text" class="form-control" placeholder="Preferred Working Hours (eg. 6pm-11pm)" />
+						<input name="bank_name" type="text" class="form-control sm" placeholder="Bank Name" />
+						<input name="bsb" type="text" class="form-control rm" placeholder="BSB" />
+						<input name="account_name" type="text" class="form-control sm" placeholder="Account Name" />
+						<input name="account_number" type="text" class="form-control rm" placeholder="Account Number" />
+						<input type="submit" class="submit" value="SUBMIT"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
